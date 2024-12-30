@@ -1,0 +1,212 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+header nav a {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+}
+
+header nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* About Section */
+#about {
+  background-color: #ffffff;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+/* Skills Section */
+#skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+#skills li {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  min-width: 150px;
+  text-align: center;
+}
+
+/* Resume Section */
+#resume a {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#resume a:hover {
+  background-color: #005bb5;
+}
+
+/* Contact Section */
+#contact ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#contact a {
+  font-size: 1.2rem;
+  color: #0066cc;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Chatbot Section */
+#chatbot {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 30px;
+}
+
+#chatbot .chatbox {
+  background-color: #f9f9f9;
+  padding: 20px;
+  height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#chatbot input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#chatbot button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-left: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#chatbot button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #skills ul {
+    flex-direction: column;
+  }
+
+  #skills li {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  #contact ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #chatbot input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  #about p, #skills li, #contact a {
+    font-size: 1rem;
+  }
+
+  #resume a {
+    font-size: 1rem;
+  }
+
+  #chatbot button {
+    font-size: 0.9rem;
+  }
+}
